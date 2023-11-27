@@ -4,6 +4,11 @@
 
 {% block content %}
 
+<div id="app">
+    <list-product :variants="{{variants|safe}}">
+    </list-product>
+</div>
+{% comment %} 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Products</h1>
 </div>
@@ -124,5 +129,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 {% endblock %}
